@@ -1,4 +1,4 @@
-# Analog-Clock
+# Analog Clock With Dark Mode
 
 ![Alt text](https://github.com/user-attachments/assets/db8b2b5f-acea-41ed-8d91-7bacfb6f77d6)
 
