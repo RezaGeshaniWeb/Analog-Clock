@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog Clock</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/output.css">
+</head>
+
+<body>
+    <main id="main" class="w-full h-screen flex flex-col justify-center gap-10 items-center bg-[#fff] relative transition-all duration-200 text-[16px]">
+        <h1 class="text-[2rem] text-[#888888] py-[2rem] uppercase font-mono tracking-widest transition-all duration-200 font-bold">Analog Clock</h1>
+        <div id="clock" class="min-h-[18em] min-w-[18em] flex justify-center items-center bg-[#fff] bg-clock bg-center bg-cover rounded-full border-4 border-[#fff] circle transition-all duration-200 before:content-[''] before:h-[0.75rem] before:w-[0.75rem] before:bg-[#888888] before:border-2 before:border-[#fff] before:absolute before:rounded-full before:z-50 before:transition-all before:duration-200">
+            <div id="hour" class="absolute flex justify-center rounded-full h-[10em] w-[10em] before:content-[''] before:absolute before:h-1/2 before:w-[6px] before:bg-[#888888] before:rounded-md"></div>
+            <div id="minute" class="absolute flex justify-center rounded-full h-[12em] w-[12em] before:content-[''] before:h-1/2 before:w-[4px] before:bg-[#888888] before:rounded-[4px]"></div>
+            <div id="seconds" class="absolute flex justify-center rounded-full w-[13em] h-[13em] before:content-[''] before:h-[60%] before:w-[2px] before:bg-[#f00] before:rounded-[2px]"></div>
+        </div>
+        <div class="my-[2em] mx-auto bottom-0">
+            <button id="dark-mode" data-theme="light" class="font-mono uppercase outline-none py-[.5rem] px-[1rem] bg-[#fff] text-[#888888] border border-[#888888] rounded-[.25rem] transition-all duration-300"> Light </button>
+        </div>
+        <!-- info -->
+        <div class="hidden w-[170px] h-[170px] rounded-full border-[1px] border-orange-400 outline-[1px] outline-orange-400 
+         outline-offset-8 fixed bottom-[50px] right-[40px] lg:flex items-center justify-center select-none z-50 group">
+            <div class="circle w-[165px] h-[165px] rounded-full">
+                <img src="img/me5.webp" alt="" class="w-full h-full rounded-full object-cover">
+            </div>
+            <strong class="absolute top-[45%] right-[-87px] rotate-[90deg] text-[15px] italic text-slate-900">Frontend
+                Developer</strong>
+            <a href="https://www.linkedin.com/in/reza-geshani-web"><i
+                    class="bi bi-linkedin group-hover:visible text-[26px] text-slate-900 absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 top-[-10px] left-[-58px]"></i></a>
+            <a href="https://www.instagram.com/rezageshani_web"><i
+                    class="bi bi-instagram group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 text-slate-900 top-[40px] left-[-80px]"></i></a>
+            <a href="https://github.com/RezaGeshaniWeb/"><i
+                    class="bi bi-github group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 text-slate-900 top-[90px] left-[-80px]"></i></a>
+            <a href="mailto:rezageshaniweb@gmail.com"><i
+                    class="bi bi-envelope-at group-hover:visible text-[26px] absolute invisible transition-all duration-150 py-[10px] px-[30px] hover:opacity-100 text-slate-900 top-[130px] left-[-58px]"></i></a>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

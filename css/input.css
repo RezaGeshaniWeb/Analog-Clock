@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .circle {
+        box-shadow: 0 -15px 15px rgba(255, 255, 255, 0.05),
+            inset 0 -15px 15px rgba(255, 255, 255, 0.05), 0 15px 15px rgba(0, 0, 0, 0.3),
+            inset 0 15px 15px rgba(0, 0, 0, 0.3);
+    }
+    .darkmode {
+        background-color: #1e1f26 !important;
+        color: #ccc !important;
+        button {
+            background-color: transparent !important;
+        }
+        #clock {
+            background-color: transparent !important;
+            border-color: transparent !important;
+        }
+        strong, i {
+            color: #ccc !important;
+        }
+    }
+}
